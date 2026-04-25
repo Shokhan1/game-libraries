@@ -1,0 +1,83 @@
+.game-nav {
+    display: flex;
+    gap: 40px;
+    padding: 20px 0;
+    border-bottom: 1px solid #334155;
+    margin-bottom: 30px;
+}
+
+.game-nav a {
+    text-decoration: none;
+    color: #94a3b8;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.game-nav a.active { 
+    color: #fff; border-bottom: 2px solid var(--accent); 
+}
+
+.game-main-info {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+.info-text { flex: 2; }
+.game-poster-large {
+    flex: 1;
+    background: #334155;
+    border-radius: 12px;
+    min-height: 350px;
+}
+
+.description { 
+    color: #cbd5e1; margin: 20px 0; line-height: 1.8; 
+}
+
+.tags { 
+    display: flex; gap: 10px; margin-top: 20px; flex-wrap: wrap; 
+}
+.tag { 
+    background: #1e293b; padding: 5px 15px; border-radius: 4px; font-size: 14px; color: #94a3b8; 
+}
+
+
+.screen-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); /* Авто-подбор колонок */
+    gap: 15px;
+    margin: 20px 0 50px;
+}
+
+.screen-item { 
+    background: #334155; 
+    aspect-ratio: 16/9; 
+    border-radius: 8px;
+    overflow: hidden; /* Чтобы картинки не вылезали за края */
+}
+
+
+.similar-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.mini-card { 
+    background: #334155; aspect-ratio: 2/3; border-radius: 8px; 
+}
+
+h2 { 
+    text-transform: lowercase; font-weight: 400; margin-bottom: 20px; 
+}
+.comment-form { display: flex; flex-direction: column; gap: 10px; margin-bottom: 30px; }
+.comment-form input, .comment-form textarea {
+    background: #1e293b; border: 1px solid #334155; color: white; padding: 12px; border-radius: 8px;
+}
+.comment-form button {
+    background: var(--accent); color: white; border: none; padding: 10px; border-radius: 8px; cursor: pointer; align-self: flex-end;
+}

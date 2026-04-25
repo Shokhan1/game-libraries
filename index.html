@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Library | Главная</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bxslider@4.2.17/dist/jquery.bxslider.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bxslider@4.2.17/dist/jquery.bxslider.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="menu container">
+        <div class="logo"><h1>GL<span>.</span></h1></div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class=""><i class="fa-solid fa-gamepad"></i> Каталог</a></li>
+                <li><a href="#"><i class="fa-solid fa-newspaper"></i> Новости</a></li>
+                <li><a href="#"><i class="fa-solid fa-book"></i> Статьи</a></li>
+                <li><a href="#"><i class="fa-solid fa-circle-question"></i> Помощь</a></li>
+            </ul>
+        </nav>
+        <div class="icons">
+            <div class="search-container">
+                <i class="fa-solid fa-magnifying-glass" id="searchIcon"></i>
+                <div class="search-dropdown" id="searchDropdown">
+                    <input type="text" id="searchInput" placeholder="Поиск по названию или ID...">
+                    <ul id="resultsList"></ul>
+                </div>
+            </div>
+            <i class="fa-solid fa-gear"></i>
+            <i class="fa-solid fa-moon"></i>
+            <i class="fa-solid fa-user"></i>
+        </div>
+    </div>
+</header>
+
+<main class="container">
+    <section class="hero-section">
+        <article>
+            <h2 class="section-title">Лучшие игры только у нас!</h2>
+            <div class="slider">
+                <div class="card" data-game-id="1">
+                    <img src="assets/Elden ring.jpg">
+                </div>
+                <div class="card" data-game-id="2">
+                    <img src="assets/ведьмак.jpg">
+                </div>
+                <div class="card" data-game-id="3">
+                    <img src="assets/RUST.png">
+                </div>
+                <div class="card" data-game-id="4">
+                    <img src="assets/HOI4 1.jpg">
+                </div>
+                <div class="card" data-game-id="5">
+                    <img src="assets/CSGO.jpg">
+                </div>
+                <div class="card" data-game-id="6">
+                    <img src="assets/PUBG.jPG">
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <section>
+        <article>
+            <h2 class="section-title">Выживание</h2>
+            <div class="slider">
+                <div class="card" data-game-id="7">
+                    <img src="assets/DAYZ.jPG">
+                </div>
+                <div class="card" data-game-id="8">
+                    <img src="assets/DARK SOULS.jPG">
+                </div>
+                <div class="card" data-game-id="9">
+                    <img src="assets/RDR.jPG">
+                </div>
+                <div class="card" data-game-id="10">
+                    <img src="assets/gta.jPG">
+                </div>
+                <div class="card" data-game-id="11">
+                    <img src="assets/SKYRIM.jPG">
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <section>
+        <article>
+            <h2 class="section-title">экшен</h2>
+            <div class="slider">
+                <div class="card" data-game-id="12">
+                    <img src="assets/CUBERPUNK.jPG">
+                </div>
+                <div class="card" data-game-id="13">
+                    <img src="assets/FROSTPUNK.jpg">
+                </div>
+                <div class="card" data-game-id="14">
+                    <img src="assets/METRO.jPG">
+                </div>
+                <div class="card" data-game-id="15">
+                    <img src="assets/DOTA.jPG">
+                </div>
+                <div class="card" data-game-id="16">
+                    <img src="assets/TEAM FORTRESS.JPG">
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <div class="info-grid">
+        <section class="news card-style">
+            <h2>Новости дня!</h2>
+            <div class="box news-box"></div>
+            <p>Свежие обновления из мира игровой индустрии специально для вас.</p>
+        </section>
+
+        <section class="article card-style">
+            <h2>Статья недели</h2>
+            <div class="box article-box"></div>
+            <p>Разбор механик и секретов самых ожидаемых релизов этого года.</p>
+        </section>
+    </div>
+</main>
+
+<footer>
+    <div class="footer-content container">
+        <div class="footer-info">
+            <p>© 2026 Все права защищены</p>
+            <p><i class="fa-solid fa-phone"></i> +123 567 89 01 02</p>
+            <p><i class="fa-solid fa-envelope"></i> pochta@gmail.com</p>
+        </div>
+        <h2 class="footer-logo">Shokhan.DEU</h2>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
